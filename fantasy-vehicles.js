@@ -101,7 +101,7 @@ class Target extends Missle{
     this._sender = sender;
   }
 
-  //this is actually legit and properly calculates time depending on the speed of the missle
+  //calculates time depending on the speed of the missle
   timeToDestCalculator(newSpeed){
     let distanceToTimeRatio = this._timeToDest / this._distance;
     if(newSpeed >= this._missleSpeed){
@@ -143,6 +143,6 @@ class Target extends Missle{
   }
 }
 
-let northKorea = new Target("808Bomber", "North Korea", 9.5, 475, 4550, 1000000, "Hawaii"); //distance from Hawaii to North Korea is accurate as well as the time to there
+let northKorea = new Target("808Bomber", "North Korea", 9.5, 475, 4550, 1000000, "Hawaii"); //distance and time from Hawaii to North Korea is accurate
 northKorea.missleSpeed = 450;
 console.log(northKorea.targetInfo);
