@@ -102,6 +102,7 @@ class Target extends Missle{
   }
 
   //calculates time depending on the speed of the missle
+  //could have been simplified to "distance / missleSpeed"
   timeToDestCalculator(newSpeed){
     let distanceToTimeRatio = this._timeToDest / this._distance;
     if(newSpeed >= this._missleSpeed){
